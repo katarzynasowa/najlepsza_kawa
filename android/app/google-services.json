@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "281448722894",
+    "project_id": "najlepsza-kawa-rzeszow",
+    "storage_bucket": "najlepsza-kawa-rzeszow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281448722894:android:dd1a3d884fdb91c5bd7b9f",
+        "android_client_info": {
+          "package_name": "com.katarzynasowa.najlepsza_kawa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281448722894-21domt1o82usqum8nomub2vv6grdjnqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiK249I5pArPB0GVS2zPOxR_nAX2pp0O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281448722894-21domt1o82usqum8nomub2vv6grdjnqg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "281448722894-3nlg2cd288iji6t3gsqm0qd2ufm8tl0j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.katarzynasowa.najlepszaKawa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

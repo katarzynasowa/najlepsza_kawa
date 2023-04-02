@@ -1,4 +1,4 @@
-package com.example.najlepsza_kawa
+package com.katarzynasowa.najlepsza_kawa
 
 import io.flutter.embedding.android.FlutterActivity
 
