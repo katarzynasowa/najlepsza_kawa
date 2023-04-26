@@ -63,7 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '281448722894',
     projectId: 'najlepsza-kawa-rzeszow',
     storageBucket: 'najlepsza-kawa-rzeszow.appspot.com',
-    iosClientId: '281448722894-3nlg2cd288iji6t3gsqm0qd2ufm8tl0j.apps.googleusercontent.com',
+    iosClientId:
+        '281448722894-3nlg2cd288iji6t3gsqm0qd2ufm8tl0j.apps.googleusercontent.com',
     iosBundleId: 'com.katarzynasowa.najlepszaKawa',
   );
 }
