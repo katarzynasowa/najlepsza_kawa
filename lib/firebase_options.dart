@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,15 +49,6 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDbVy-DX9yUAJ-1CAVGOtR3XeQYCUA6MIo',
-    appId: '1:281448722894:web:80ed1e8baca3dcb8bd7b9f',
-    messagingSenderId: '281448722894',
-    projectId: 'najlepsza-kawa-rzeszow',
-    authDomain: 'najlepsza-kawa-rzeszow.firebaseapp.com',
-    storageBucket: 'najlepsza-kawa-rzeszow.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDiK249I5pArPB0GVS2zPOxR_nAX2pp0O8',
     appId: '1:281448722894:android:dd1a3d884fdb91c5bd7b9f',
@@ -66,17 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '281448722894',
     projectId: 'najlepsza-kawa-rzeszow',
     storageBucket: 'najlepsza-kawa-rzeszow.appspot.com',
-    iosClientId: '281448722894-3nlg2cd288iji6t3gsqm0qd2ufm8tl0j.apps.googleusercontent.com',
-    iosBundleId: 'com.katarzynasowa.najlepszaKawa',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB68-ASaAaWC6TmFTufh0ILlv3uPKsmbv4',
-    appId: '1:281448722894:ios:665198e2d035ec57bd7b9f',
-    messagingSenderId: '281448722894',
-    projectId: 'najlepsza-kawa-rzeszow',
-    storageBucket: 'najlepsza-kawa-rzeszow.appspot.com',
-    iosClientId: '281448722894-3nlg2cd288iji6t3gsqm0qd2ufm8tl0j.apps.googleusercontent.com',
+    iosClientId:
+        '281448722894-3nlg2cd288iji6t3gsqm0qd2ufm8tl0j.apps.googleusercontent.com',
     iosBundleId: 'com.katarzynasowa.najlepszaKawa',
   );
 }
