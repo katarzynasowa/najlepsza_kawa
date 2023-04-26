@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:najlepsza_kawa/app/home/restaurants/cubit/restaurants_cubit.dart';
+import 'package:najlepsza_kawa/app/features/home/restaurants/cubit/restaurants_cubit.dart';
 
 class RestaurantsPageContent extends StatelessWidget {
   const RestaurantsPageContent({
